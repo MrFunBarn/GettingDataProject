@@ -43,4 +43,4 @@ full_data <- rbind(train, test)
 mean_std_data <- full_data[c(1,2,grep('-std()|-mean()', names(full_data)))]
 
 # Write tidy data to a csv file.
-write.csv(file='TidyData.csv', mean_std_data)
+write.table(file='tidy-table.txt', mean_std_data, row.names = FALSE)
