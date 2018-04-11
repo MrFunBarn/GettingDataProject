@@ -39,5 +39,8 @@ train <- cbind(subject_train, y_train, x_train)
 # Merge the test and train data.
 full_data <- rbind(train, test)
 
-# Extract just the columns for mean and std data.
-mean_std_data <- full_data[grep('-std()|-mean()', names(full_data))]
+# Extract just the columns for mean and std data plus subject and activity.
+mean_std_data <- full_data[c(1,2,grep('-std()|-mean()', names(full_data)))]
+
+# Write tidy data to a csv file.
+write.csv(file='TidyData.csv', mean_std_data)
