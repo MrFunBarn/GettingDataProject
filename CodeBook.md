@@ -1,21 +1,78 @@
 # Code Book
 
-## Reading the Files
+Each row of the data represents one trial. The first two columns, subject and activity, show the subject that performed the trial (ints 1-30) and the activitiy being performed in the trial ("LAYING", "SITTING", "STANDING", "WALKING",          "WALKING_DOWNSTAIRS", "WALKING_UPSTAIRS"). The remaining 79 columns contain the mean and standard deviation numbers for assorted values measured or derived from the phone's acceleromiter and gyroscope data for each trial.
 
-First files containing the feature(colum names) and activity labels are read in. Then each of files for test and train data are read in to thier own variables. 
+## Variables
 
-## Names and Values
-
-The features file represents the column names for both the test and train x values and so where set as such. Next the y values for both the test and train data where converted to a char factor by substiting intergers representing activities with the char vector values from the activity_labels file. The y columns where named activity and the x columns named subject. 
-
-## Test and Train Frames
-
-The training x, y, and subject data were all merged together using cbind. Likewise for the test data.
-
-## Full Data
-
-The full test and train data were then combined into a full data set using rbind.
-
-## Tidy
-
-Only the columns dealing with the standard deviation or mean of some feature where extracted using grep(), plus the subject and activity columns, were extracted from the full data set to create the final data set. In the tidy dataset, each row represents a single experimental trial. The Activity column tells what activity was being performed at each trial and the subject column tells which of the 1-30 subjects performed the trial. The remaining columns specify mean and standard deviation figures on the tracked gyroscop and acceleromiter values.
+* Subject
+* Activity
+* tBodyAcc-mean()-X
+* tBodyAcc-mean()-Y
+* tBodyAcc-mean()-Z
+* tBodyAcc-std()-X
+* tBodyAcc-std()-Y
+* tBodyAcc-std()-Z
+* tGravityAcc-mean()-X
+* tGravityAcc-mean()-Y
+* tGravityAcc-mean()-Z
+* tGravityAcc-std()-X
+* tGravityAcc-std()-Y
+* tGravityAcc-std()-Z
+* BodyAccJerk-mean()-X
+* tBodyAccJerk-mean()-Y
+* tBodyAccJerk-mean()-Z
+* tBodyAccJerk-std()-X
+* tBodyAccJerk-std()-Y
+* tBodyAccJerk-std()-Z
+* tBodyGyro-mean()-X
+* tBodyGyro-mean()-Y
+* tBodyGyro-mean()-Z
+* BodyGyro-std()-X
+* tBodyGyro-std()-Y
+* BodyGyro-std()-Z
+* tBodyGyroJerk-mean()-X
+* BodyGyroJerk-mean()-Y
+* tBodyGyroJerk-mean()-Z
+* tBodyGyroJerk-std()-X
+* BodyGyroJerk-std()-Y
+* tBodyGyroJerk-std()-Z
+* tBodyAccMag-mean()
+* BodyAccJerkMag-mean()
+* tBodyAccJerkMag-std()
+* BodyGyroMag-mean()
+* BodyAcc-mean()-X
+* fBodyAcc-mean()-Y
+* fBodyAcc-mean()-Z
+* fBodyAcc-std()-X
+* fBodyAcc-std()-Y
+* fBodyAcc-std()-Z
+* fBodyAcc-meanFreq()-X
+* fBodyAcc-meanFreq()-Y
+* fBodyAcc-meanFreq()-Z
+* fBodyAccJerk-mean()-X
+* fBodyAccJerk-mean()-Y
+* fBodyAccJerk-mean()-Z
+* fBodyAccJerk-std()-X
+* fBodyAccJerk-std()-Y
+* fBodyAccJerk-std()-Z
+* fBodyAccJerk-meanFreq()-X
+* fBodyAccJerk-meanFreq()-Y
+* fBodyAccJerk-meanFreq()-Z
+* fBodyGyro-mean()-X
+* fBodyGyro-mean()-Y
+* fBodyGyro-mean()-Z
+* fBodyGyro-meanFreq()-X
+* fBodyGyro-meanFreq()-Y
+* fBodyGyro-meanFreq()-Z
+* fBodyAccMag-mean()
+* fBodyAccMag-std()
+* fBodyAccMag-meanFreq()
+* fBodyBodyAccJerkMag-mean()
+* fBodyBodyAccJerkMag-std()
+* fBodyBodyAccJerkMag-meanFreq()
+* fBodyBodyGyroMag-mean()
+* fBodyBodyGyroMag-std()
+* BodyBodyGyroMag-meanFreq()
+* BodyBodyGyroJerkMag-mean()
+* fBodyBodyGyroJerkMag-std()
+* fBodyBodyGyroJerkMag-meanFreq()
