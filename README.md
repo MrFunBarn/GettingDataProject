@@ -21,6 +21,7 @@ To produce the tidy data,
 2) Place run_analysis.R in the same directory as the zip file containg the original data. 
 3) Unzip the original data.
 4) Run run_analysis.R. 
+
 The tidy data will be saved as a plain text file, tidy-table.txt in the directory containing run_analysis.R.
 
 ## Analysis
