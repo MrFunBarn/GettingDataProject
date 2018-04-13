@@ -1,6 +1,6 @@
 # Code Book
 
-Each row of the data represents one trial. The first two columns, subject and activity, show the subject that performed the trial (ints 1-30) and the activitiy being performed in the trial ("LAYING", "SITTING", "STANDING", "WALKING",          "WALKING_DOWNSTAIRS", "WALKING_UPSTAIRS"). The remaining 79 columns contain the mean and standard deviation numbers for assorted values measured or derived from the phone's acceleromiter and gyroscope data for each trial.
+Each row of the data represents one trial. The first two columns, subject and activity, show the subject that performed the trial (ints 1-30) and the activitiy being performed in the trial ("LAYING", "SITTING", "STANDING", "WALKING",          "WALKING_DOWNSTAIRS", "WALKING_UPSTAIRS"). The remaining 79 columns contain the mean and standard deviation numbers for assorted values measured or derived from the phone's acceleromiter and gyroscope data for each trial. The names of these columns are preserved from the original data for easy comparison.
 
 ## Variables
 
